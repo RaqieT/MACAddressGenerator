@@ -11,7 +11,9 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <TextBox Name="macOutput" HorizontalAlignment="Stretch" IsReadOnly="True" Margin="11,25,11,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36" Grid.ColumnSpan="2">
+        <TextBox TextOptions.TextRenderingMode="ClearType"
+                 TextOptions.TextFormattingMode="Display"
+                 RenderOptions.ClearTypeHint="Enabled" Name="macOutput" HorizontalAlignment="Stretch" IsReadOnly="True" Margin="11,25,11,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36" Grid.ColumnSpan="2">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
