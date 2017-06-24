@@ -14,14 +14,6 @@
         <TextBox TextOptions.TextRenderingMode="ClearType"
                  TextOptions.TextFormattingMode="Display"
                  RenderOptions.ClearTypeHint="Enabled" Name="macOutput" HorizontalAlignment="Stretch" IsReadOnly="True" Margin="11,25,11,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="36" Grid.ColumnSpan="2">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.25"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
         </TextBox>
         <Button Content="Generate" HorizontalAlignment="Stretch" Height="27" Margin="11,66,11,0" VerticalAlignment="Top" Click="Button_Click" Grid.ColumnSpan="2"/>
         <Label Content="MAC Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,0,0,0" Foreground="White"/>
