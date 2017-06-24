@@ -53,12 +53,15 @@ namespace randomMacGenerator
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             macOutput.Text = "";
-            for (int i = 0; i < 12; i++)
+            do
             {
-                macOutput.Text += _avaiableChars.OrderBy(x => Guid.NewGuid()).FirstOrDefault();
-                if(i%2 == 1 && i != 11)
-                    macOutput.Text += Separators.Text;
-            }
+                for (int i = 0; i < 12; i++)
+                {
+                    macOutput.Text += _avaiableChars.OrderBy(x => Guid.NewGuid()).FirstOrDefault();
+                    if (i % 2 == 1 && i != 11)
+                        macOutput.Text += Separators.Text;
+                }
+            } while (macOutput.Text.Count(f => f == 'f' || f == 'F') == 12); // ff:ff:ff:ff:ff:ff elimination
         }
 
         private void ToLower()
